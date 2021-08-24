@@ -57,7 +57,7 @@ $swVTFileReportWR = Invoke-WebRequest -Method GET -Uri "https://www.virustotal.c
 After that, run the script and give it an argument:
 
 ```bash
-VirusTotal_IP_check.ps1 140.82.121.3
+VirusTotal_IP_check.ps1 github.com
 ```
 
 ### Error management
