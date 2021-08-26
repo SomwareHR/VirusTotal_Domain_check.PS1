@@ -4,7 +4,8 @@ try {
 catch {
 	Write-Host $_.Exception.Message -ForegroundColor Red
 	$_.Exception
-	Write-Host "Maybe domain does not exit in VirusTotal"
+	Write-Host "404? Domain does not exit in VirusTotal?"
+	Write-Host "401? No API key provided?"
 	exit
 }
 $swVTFileReport   = $swVTFileReportWR.content | ConvertFrom-Json
